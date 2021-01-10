@@ -13,4 +13,5 @@ options = st.multiselect(
 
 if options:
    st.line_chart(pl_df[options])
-   st.write(pl_df)
+   pl_df = pl_df.applymap('{:,}'.format) 
+   st.table(pl_df)
