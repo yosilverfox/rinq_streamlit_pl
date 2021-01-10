@@ -13,3 +13,4 @@ options = st.multiselect(
 
 if options:
    st.line_chart(pl_df[options])
+   st.write(pl_df)
